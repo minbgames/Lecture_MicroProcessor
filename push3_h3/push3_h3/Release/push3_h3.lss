@@ -1,0 +1,261 @@
+
+push3_h3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000002  00800100  000001c6  0000025a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001c6  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000002  00800102  00800102  0000025c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000025c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000028c  2**2
+                  CONTENTS, READONLY
+  5 .debug_info   00000780  00000000  00000000  000002c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000718  00000000  00000000  00000a48  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000169  00000000  00000000  00001160  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    0000027d  00000000  00000000  000012c9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e6 ec       	ldi	r30, 0xC6	; 198
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 30       	cpi	r26, 0x02	; 2
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e0       	ldi	r26, 0x02	; 2
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a4 30       	cpi	r26, 0x04	; 4
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	51 d0       	rcall	.+162    	; 0x166 <main>
+  c4:	7e c0       	rjmp	.+252    	; 0x1c2 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <key_scan>:
+  c8:	24 e0       	ldi	r18, 0x04	; 4
+  ca:	91 e0       	ldi	r25, 0x01	; 1
+  cc:	89 2f       	mov	r24, r25
+  ce:	80 95       	com	r24
+  d0:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__TEXT_REGION_LENGTH__+0x7e0062>
+  d4:	00 00       	nop
+  d6:	80 b1       	in	r24, 0x00	; 0
+  d8:	80 95       	com	r24
+  da:	80 7f       	andi	r24, 0xF0	; 240
+  dc:	11 f0       	breq	.+4      	; 0xe2 <key_scan+0x1a>
+  de:	89 0f       	add	r24, r25
+  e0:	08 95       	ret
+  e2:	99 0f       	add	r25, r25
+  e4:	21 50       	subi	r18, 0x01	; 1
+  e6:	91 f7       	brne	.-28     	; 0xcc <key_scan+0x4>
+  e8:	08 95       	ret
+
+000000ea <KeyInit>:
+  ea:	80 ef       	ldi	r24, 0xF0	; 240
+  ec:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__TEXT_REGION_LENGTH__+0x7e0062>
+  f0:	8f e0       	ldi	r24, 0x0F	; 15
+  f2:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <__TEXT_REGION_LENGTH__+0x7e0061>
+  f6:	08 95       	ret
+
+000000f8 <KeypadInput_Press>:
+  f8:	cf 93       	push	r28
+  fa:	e6 df       	rcall	.-52     	; 0xc8 <key_scan>
+  fc:	c8 2f       	mov	r28, r24
+  fe:	8f e3       	ldi	r24, 0x3F	; 63
+ 100:	9c e9       	ldi	r25, 0x9C	; 156
+ 102:	01 97       	sbiw	r24, 0x01	; 1
+ 104:	f1 f7       	brne	.-4      	; 0x102 <KeypadInput_Press+0xa>
+ 106:	00 c0       	rjmp	.+0      	; 0x108 <KeypadInput_Press+0x10>
+ 108:	00 00       	nop
+ 10a:	ef e3       	ldi	r30, 0x3F	; 63
+ 10c:	fc e9       	ldi	r31, 0x9C	; 156
+ 10e:	31 97       	sbiw	r30, 0x01	; 1
+ 110:	f1 f7       	brne	.-4      	; 0x10e <KeypadInput_Press+0x16>
+ 112:	00 c0       	rjmp	.+0      	; 0x114 <KeypadInput_Press+0x1c>
+ 114:	00 00       	nop
+ 116:	8f e3       	ldi	r24, 0x3F	; 63
+ 118:	9c e9       	ldi	r25, 0x9C	; 156
+ 11a:	01 97       	sbiw	r24, 0x01	; 1
+ 11c:	f1 f7       	brne	.-4      	; 0x11a <KeypadInput_Press+0x22>
+ 11e:	00 c0       	rjmp	.+0      	; 0x120 <KeypadInput_Press+0x28>
+ 120:	00 00       	nop
+ 122:	d2 df       	rcall	.-92     	; 0xc8 <key_scan>
+ 124:	c8 13       	cpse	r28, r24
+ 126:	ea cf       	rjmp	.-44     	; 0xfc <KeypadInput_Press+0x4>
+ 128:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <psw>
+ 12c:	89 13       	cpse	r24, r25
+ 12e:	13 c0       	rjmp	.+38     	; 0x156 <KeypadInput_Press+0x5e>
+ 130:	90 91 02 01 	lds	r25, 0x0102	; 0x800102 <__data_end>
+ 134:	9f 5f       	subi	r25, 0xFF	; 255
+ 136:	90 93 02 01 	sts	0x0102, r25	; 0x800102 <__data_end>
+ 13a:	91 31       	cpi	r25, 0x11	; 17
+ 13c:	88 f0       	brcs	.+34     	; 0x160 <KeypadInput_Press+0x68>
+ 13e:	27 e0       	ldi	r18, 0x07	; 7
+ 140:	30 e0       	ldi	r19, 0x00	; 0
+ 142:	ef e3       	ldi	r30, 0x3F	; 63
+ 144:	fc e9       	ldi	r31, 0x9C	; 156
+ 146:	31 97       	sbiw	r30, 0x01	; 1
+ 148:	f1 f7       	brne	.-4      	; 0x146 <KeypadInput_Press+0x4e>
+ 14a:	00 c0       	rjmp	.+0      	; 0x14c <KeypadInput_Press+0x54>
+ 14c:	00 00       	nop
+ 14e:	21 50       	subi	r18, 0x01	; 1
+ 150:	31 09       	sbc	r19, r1
+ 152:	b9 f7       	brne	.-18     	; 0x142 <KeypadInput_Press+0x4a>
+ 154:	02 c0       	rjmp	.+4      	; 0x15a <KeypadInput_Press+0x62>
+ 156:	10 92 02 01 	sts	0x0102, r1	; 0x800102 <__data_end>
+ 15a:	80 93 03 01 	sts	0x0103, r24	; 0x800103 <psw>
+ 15e:	01 c0       	rjmp	.+2      	; 0x162 <KeypadInput_Press+0x6a>
+ 160:	80 e0       	ldi	r24, 0x00	; 0
+ 162:	cf 91       	pop	r28
+ 164:	08 95       	ret
+
+00000166 <main>:
+ 166:	80 ef       	ldi	r24, 0xF0	; 240
+ 168:	87 bb       	out	0x17, r24	; 23
+ 16a:	bc 9a       	sbi	0x17, 4	; 23
+ 16c:	88 bb       	out	0x18, r24	; 24
+ 16e:	88 e6       	ldi	r24, 0x68	; 104
+ 170:	83 bf       	out	0x33, r24	; 51
+ 172:	8a e0       	ldi	r24, 0x0A	; 10
+ 174:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__TEXT_REGION_LENGTH__+0x7e006a>
+ 178:	b8 df       	rcall	.-144    	; 0xea <KeyInit>
+ 17a:	78 94       	sei
+ 17c:	83 b7       	in	r24, 0x33	; 51
+ 17e:	82 60       	ori	r24, 0x02	; 2
+ 180:	83 bf       	out	0x33, r24	; 51
+ 182:	ca ef       	ldi	r28, 0xFA	; 250
+ 184:	d5 e0       	ldi	r29, 0x05	; 5
+ 186:	b8 df       	rcall	.-144    	; 0xf8 <KeypadInput_Press>
+ 188:	82 31       	cpi	r24, 0x12	; 18
+ 18a:	31 f0       	breq	.+12     	; 0x198 <main+0x32>
+ 18c:	84 31       	cpi	r24, 0x14	; 20
+ 18e:	49 f4       	brne	.+18     	; 0x1a2 <main+0x3c>
+ 190:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__data_start>
+ 194:	8b 5f       	subi	r24, 0xFB	; 251
+ 196:	03 c0       	rjmp	.+6      	; 0x19e <main+0x38>
+ 198:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__data_start>
+ 19c:	85 50       	subi	r24, 0x05	; 5
+ 19e:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__data_start>
+ 1a2:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__data_start>
+ 1a6:	8a 3f       	cpi	r24, 0xFA	; 250
+ 1a8:	10 f0       	brcs	.+4      	; 0x1ae <main+0x48>
+ 1aa:	c0 93 00 01 	sts	0x0100, r28	; 0x800100 <__data_start>
+ 1ae:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__data_start>
+ 1b2:	86 30       	cpi	r24, 0x06	; 6
+ 1b4:	10 f4       	brcc	.+4      	; 0x1ba <main+0x54>
+ 1b6:	d0 93 00 01 	sts	0x0100, r29	; 0x800100 <__data_start>
+ 1ba:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__data_start>
+ 1be:	81 bf       	out	0x31, r24	; 49
+ 1c0:	e2 cf       	rjmp	.-60     	; 0x186 <main+0x20>
+
+000001c2 <_exit>:
+ 1c2:	f8 94       	cli
+
+000001c4 <__stop_program>:
+ 1c4:	ff cf       	rjmp	.-2      	; 0x1c4 <__stop_program>

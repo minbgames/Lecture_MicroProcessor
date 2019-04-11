@@ -1,0 +1,309 @@
+
+homework_ch7.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000001a  00800100  00000184  000001f8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000184  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000212  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000244  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000048  00000000  00000000  00000280  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009ef  00000000  00000000  000002c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000008cb  00000000  00000000  00000cb7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000355  00000000  00000000  00001582  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000064  00000000  00000000  000018d8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000431  00000000  00000000  0000193c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000117  00000000  00000000  00001d6d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001e84  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e8       	ldi	r30, 0x84	; 132
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	aa 31       	cpi	r26, 0x1A	; 26
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d0       	rcall	.+4      	; 0xb8 <main>
+  b4:	65 c0       	rjmp	.+202    	; 0x180 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <main>:
+#include <avr/io.h>
+#include "seg7.h"
+
+int main()
+{
+  b8:	04 d0       	rcall	.+8      	; 0xc2 <Seg7Init>
+  ba:	84 e0       	ldi	r24, 0x04	; 4
+  bc:	91 e0       	ldi	r25, 0x01	; 1
+  be:	0a d0       	rcall	.+20     	; 0xd4 <Seg7DispStr>
+  c0:	fc cf       	rjmp	.-8      	; 0xba <main+0x2>
+
+000000c2 <Seg7Init>:
+
+static unsigned char cstr[N_BUF]={16};
+
+void Seg7Init()
+{
+	SSEG_CONT|=CONT_MASK;
+  c2:	82 b3       	in	r24, 0x12	; 18
+  c4:	80 6f       	ori	r24, 0xF0	; 240
+  c6:	82 bb       	out	0x12, r24	; 18
+	DDR_CONT|=CONT_MASK;
+  c8:	81 b3       	in	r24, 0x11	; 17
+  ca:	80 6f       	ori	r24, 0xF0	; 240
+  cc:	81 bb       	out	0x11, r24	; 17
+	DDR_DATA = 0xFF;
+  ce:	8f ef       	ldi	r24, 0xFF	; 255
+  d0:	8a bb       	out	0x1a, r24	; 26
+  d2:	08 95       	ret
+
+000000d4 <Seg7DispStr>:
+}
+
+void Seg7DispStr(char *pch)
+{
+  d4:	cf 93       	push	r28
+  d6:	df 93       	push	r29
+	int j;
+
+	for (j = 1; j < N_BUF; j++) cstr[j] =16;
+  d8:	e0 e0       	ldi	r30, 0x00	; 0
+  da:	f1 e0       	ldi	r31, 0x01	; 1
+  dc:	20 e1       	ldi	r18, 0x10	; 16
+  de:	21 83       	std	Z+1, r18	; 0x01
+  e0:	22 83       	std	Z+2, r18	; 0x02
+  e2:	23 83       	std	Z+3, r18	; 0x03
+  e4:	ec 01       	movw	r28, r24
+  e6:	df 01       	movw	r26, r30
+  e8:	64 e0       	ldi	r22, 0x04	; 4
+  ea:	71 e0       	ldi	r23, 0x01	; 1
+		}
+		else if(pch[j]-'0'>=0 && pch[j]-'0'<=9){
+			cstr[j]=pch[j]-'0';
+		}
+		else{
+			cstr[j]=16;
+  ec:	80 e1       	ldi	r24, 0x10	; 16
+
+	for (j = 1; j < N_BUF; j++) cstr[j] =16;
+
+	j=0;
+	do{
+		if(pch[j]-'A'>=0 && pch[j]-'A'<=5){
+  ee:	99 91       	ld	r25, Y+
+  f0:	29 2f       	mov	r18, r25
+  f2:	30 e0       	ldi	r19, 0x00	; 0
+  f4:	a9 01       	movw	r20, r18
+  f6:	41 54       	subi	r20, 0x41	; 65
+  f8:	51 09       	sbc	r21, r1
+  fa:	46 30       	cpi	r20, 0x06	; 6
+  fc:	51 05       	cpc	r21, r1
+  fe:	18 f4       	brcc	.+6      	; 0x106 <Seg7DispStr+0x32>
+			cstr[j]=pch[j]-'A'+10;
+ 100:	97 53       	subi	r25, 0x37	; 55
+ 102:	90 83       	st	Z, r25
+ 104:	12 c0       	rjmp	.+36     	; 0x12a <Seg7DispStr+0x56>
+		}
+		else if(pch[j]-'a'>=0 && pch[j]-'a'<=5){
+ 106:	a9 01       	movw	r20, r18
+ 108:	41 56       	subi	r20, 0x61	; 97
+ 10a:	51 09       	sbc	r21, r1
+ 10c:	46 30       	cpi	r20, 0x06	; 6
+ 10e:	51 05       	cpc	r21, r1
+ 110:	18 f4       	brcc	.+6      	; 0x118 <Seg7DispStr+0x44>
+			cstr[j]=pch[j]-'A'+10;
+ 112:	97 53       	subi	r25, 0x37	; 55
+ 114:	90 83       	st	Z, r25
+ 116:	09 c0       	rjmp	.+18     	; 0x12a <Seg7DispStr+0x56>
+		}
+		else if(pch[j]-'0'>=0 && pch[j]-'0'<=9){
+ 118:	20 53       	subi	r18, 0x30	; 48
+ 11a:	31 09       	sbc	r19, r1
+ 11c:	2a 30       	cpi	r18, 0x0A	; 10
+ 11e:	31 05       	cpc	r19, r1
+ 120:	18 f4       	brcc	.+6      	; 0x128 <Seg7DispStr+0x54>
+			cstr[j]=pch[j]-'0';
+ 122:	90 53       	subi	r25, 0x30	; 48
+ 124:	90 83       	st	Z, r25
+ 126:	01 c0       	rjmp	.+2      	; 0x12a <Seg7DispStr+0x56>
+		}
+		else{
+			cstr[j]=16;
+ 128:	80 83       	st	Z, r24
+ 12a:	31 96       	adiw	r30, 0x01	; 1
+		}
+		j++;
+
+	}while(j<4);
+ 12c:	e6 17       	cp	r30, r22
+ 12e:	f7 07       	cpc	r31, r23
+ 130:	f1 f6       	brne	.-68     	; 0xee <Seg7DispStr+0x1a>
+ 132:	40 e0       	ldi	r20, 0x00	; 0
+ 134:	50 e0       	ldi	r21, 0x00	; 0
+
+	for (j = 0; j < N_SEGMENT; j++) {
+		SSEG_CONT = ( SSEG_CONT & ~CONT_MASK)|(~(OUTPUT_VALUE<<j)&CONT_MASK);
+ 136:	60 e1       	ldi	r22, 0x10	; 16
+ 138:	70 e0       	ldi	r23, 0x00	; 0
+ 13a:	92 b3       	in	r25, 0x12	; 18
+ 13c:	9b 01       	movw	r18, r22
+ 13e:	04 2e       	mov	r0, r20
+ 140:	02 c0       	rjmp	.+4      	; 0x146 <Seg7DispStr+0x72>
+ 142:	22 0f       	add	r18, r18
+ 144:	33 1f       	adc	r19, r19
+ 146:	0a 94       	dec	r0
+ 148:	e2 f7       	brpl	.-8      	; 0x142 <Seg7DispStr+0x6e>
+ 14a:	82 2f       	mov	r24, r18
+ 14c:	80 95       	com	r24
+ 14e:	80 7f       	andi	r24, 0xF0	; 240
+ 150:	9f 70       	andi	r25, 0x0F	; 15
+ 152:	89 2b       	or	r24, r25
+ 154:	82 bb       	out	0x12, r24	; 18
+		SSEG_DATA = ~SegTable[cstr[j]];
+ 156:	ed 91       	ld	r30, X+
+ 158:	f0 e0       	ldi	r31, 0x00	; 0
+ 15a:	e7 5f       	subi	r30, 0xF7	; 247
+ 15c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 15e:	80 81       	ld	r24, Z
+ 160:	80 95       	com	r24
+ 162:	8b bb       	out	0x1b, r24	; 27
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 164:	81 ee       	ldi	r24, 0xE1	; 225
+ 166:	94 e0       	ldi	r25, 0x04	; 4
+ 168:	01 97       	sbiw	r24, 0x01	; 1
+ 16a:	f1 f7       	brne	.-4      	; 0x168 <Seg7DispStr+0x94>
+ 16c:	00 c0       	rjmp	.+0      	; 0x16e <Seg7DispStr+0x9a>
+ 16e:	00 00       	nop
+		}
+		j++;
+
+	}while(j<4);
+
+	for (j = 0; j < N_SEGMENT; j++) {
+ 170:	4f 5f       	subi	r20, 0xFF	; 255
+ 172:	5f 4f       	sbci	r21, 0xFF	; 255
+ 174:	44 30       	cpi	r20, 0x04	; 4
+ 176:	51 05       	cpc	r21, r1
+ 178:	01 f7       	brne	.-64     	; 0x13a <Seg7DispStr+0x66>
+		SSEG_CONT = ( SSEG_CONT & ~CONT_MASK)|(~(OUTPUT_VALUE<<j)&CONT_MASK);
+		SSEG_DATA = ~SegTable[cstr[j]];
+		_delay_ms(5);
+	}
+ 17a:	df 91       	pop	r29
+ 17c:	cf 91       	pop	r28
+ 17e:	08 95       	ret
+
+00000180 <_exit>:
+ 180:	f8 94       	cli
+
+00000182 <__stop_program>:
+ 182:	ff cf       	rjmp	.-2      	; 0x182 <__stop_program>
